@@ -31,7 +31,7 @@ export default function SpaceTourism() {
   ]
 
   return (
-    <section>
+    <section className={`${activeTourism === 1 ? "bg-[url(/assets/destination/background-destination-desktop.jpg)] h-screen w-full": ""}`}>
       <header>
       <NavBar menuData={menuData} handleClickMenu={handleClickMenu} />
       </header>
