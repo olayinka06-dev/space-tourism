@@ -27,8 +27,13 @@ const Crew = () => {
     <div className="">
       <div className=""></div>
       <div className="">
+        
+      </div>
+      <div className="">
         {
-
+          pagination.map((pg, i)=>(
+            <span onClick={()=> handleClickPagination(i)}>{pg}</span>
+          ))
         }
       </div>
     </div>
