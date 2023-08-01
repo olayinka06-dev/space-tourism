@@ -24,7 +24,7 @@ const CrewCard = ({ image, headings, title, paragraph}) => {
           </div>
         </div>
         <div data-aos="fade-right" className="w-full md:w-1/2">
-          <img className="" src={image} alt="Planets" />
+          <img className="h-[600px]" src={image} alt="Planets" />
         </div>
       </div>
     </div>

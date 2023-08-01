@@ -1,5 +1,6 @@
 import React from 'react';
 import CrewCard from './CrewCard';
+import allData from '../allData';
 
 const Crew = () => {
   const pagination = [
@@ -27,31 +28,26 @@ const Crew = () => {
 
   const crewContent = [
     {
-      content: (<CrewCard image={} headings={} title={} paragraph={} />)
+      content: (<CrewCard image={allData.map(ald => ald.crew[0].images.png)} headings={allData.map(ald => ald.crew[0].role)} title={allData.map(ald => ald.crew[0].name)} paragraph={allData.map(ald => ald.crew[0].bio)} />)
     },
-    {
-      content: (<CrewCard image={} headings={} title={} paragraph={} />)
-    },
-    {
-      content: (<CrewCard image={} headings={} title={} paragraph={} />)
-    },
-    {
-      content: (<CrewCard image={} headings={} title={} paragraph={} />)
-    },
+
   ]
   return (
     <div className="">
       <div className=""></div>
       <div className="">
-
-      </div>
-      <div className="">
         {
           pagination.map((pg, i)=>(
-            <span onClick={()=> handleClickPagination(i)}>{pg}</span>
+            <span className='bg-[red] h-[30vh] w-full' onClick={()=> handleClickPagination(i)}>{pg.ball}</span>
           ))
         }
       </div>
+      <div className="">
+        {
+          crewContent[0].content
+        }
+      </div>
+
     </div>
   )
 }

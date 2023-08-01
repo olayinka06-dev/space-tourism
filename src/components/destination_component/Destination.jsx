@@ -15,6 +15,8 @@ const Destination = () => {
     {
       content: (
         <DestinationCard
+        fade_left={"fade-left"}
+        fade_right={"fade-right"}
           image={allData.map((ald) => ald.destinations[activeplanet].images.png)}
           planet_name={allData.map((ald) => ald.destinations[activeplanet].name)}
           planet_info={allData.map((ald) => ald.destinations[activeplanet].description)}
@@ -26,6 +28,8 @@ const Destination = () => {
     {
       content: (
         <DestinationCard
+        fade_left={"fade-left"}
+        fade_right={"fade-right"}
           image={allData.map((ald) => ald.destinations[activeplanet].images.png)}
           planet_name={allData.map((ald) => ald.destinations[activeplanet].name)}
           planet_info={allData.map((ald) => ald.destinations[activeplanet].description)}
@@ -37,6 +41,8 @@ const Destination = () => {
     {
       content: (
         <DestinationCard
+        fade_left={"fade-left"}
+        fade_right={"fade-right"}
           image={allData.map((ald) => ald.destinations[activeplanet].images.png)}
           planet_name={allData.map((ald) => ald.destinations[activeplanet].name)}
           planet_info={allData.map((ald) => ald.destinations[activeplanet].description)}
@@ -48,6 +54,8 @@ const Destination = () => {
     {
       content: (
         <DestinationCard
+        fade_left={"fade-left"}
+        fade_right={"fade-right"}
           image={allData.map((ald) => ald.destinations[activeplanet].images.png)}
           planet_name={allData.map((ald) => ald.destinations[activeplanet].name)}
           planet_info={allData.map((ald) => ald.destinations[activeplanet].description)}

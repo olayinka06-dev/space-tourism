@@ -3,7 +3,7 @@ import React, {useEffect } from 'react';
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
-const DestinationCard = ({image, planet_name, planet_info, distance, time}) => {
+const DestinationCard = ({fade_right, fade_left, image, planet_name, planet_info, distance, time}) => {
   useEffect(() => {
     Aos.init({
       duration: 1000,
@@ -14,10 +14,10 @@ const DestinationCard = ({image, planet_name, planet_info, distance, time}) => {
   return (
     <div className="container mx-auto">
       <div className="flex">
-        <div data-aos="fade-right" className="w-full md:w-1/2">
+        <div data-aos={fade_right} className="w-full md:w-1/2">
           <img className="" src={image} alt="Planets" />
         </div>
-        <div data-aos="fade-left" className="w-full md:w-1/2">
+        <div data-aos={fade_left} className="w-full md:w-1/2">
           <div className="">
             <h1 className="text-[40px] text-white">{planet_name}</h1>
             <p className="text-white text-opacity-30">{planet_info}</p>
