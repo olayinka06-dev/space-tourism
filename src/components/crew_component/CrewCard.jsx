@@ -13,14 +13,14 @@ const CrewCard = ({ image, headings, title, paragraph}) => {
   }, []);
   return (
     <div className="container mx-auto">
-      <div className="flex">
+      <div className="flex flex-row justify-center items-center">
         <div data-aos="fade-left" className="w-full md:w-1/2">
           <div className="">
-            <h1 className="text-[40px] text-white">{title}</h1>
-            <h1 className="text-[40px] text-white">{headings}</h1>
+            <h1 className="text-[40px] text-[rgb(159,161,170)]">{title}</h1>
+            <h1 className="text-[42px] text-white">{headings}</h1>
           </div>
           <div className="flex-col flex">
-            <p className="text-white text-opacity-30">{paragraph}</p>
+            <p className="text-[rgb(143,147,163)] leading-relaxed">{paragraph}</p>
           </div>
         </div>
         <div data-aos="fade-right" className="w-full md:w-1/2">

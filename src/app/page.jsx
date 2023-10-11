@@ -31,7 +31,7 @@ export default function SpaceTourism() {
   ]
 
   return (
-    <section className={`${activeTourism === 1 ? "bg-[url(/assets/destination/background-destination-desktop.jpg)] h-screen w-full" : activeTourism === 2 ? "bg-[url(/assets/crew/background-crew-desktop.jpg)] min-h-screen" : ""}`}>
+    <section className={`${activeTourism === 1 ? "bg-[url(/assets/destination/background-destination-desktop.jpg)] h-screen w-full" : activeTourism === 2 ? "bg-[url(/assets/crew/background-crew-desktop.jpg)] min-h-screen" : activeTourism === 3 ? "bg-[url(/assets/technology/background-technology-desktop.jpg)] h-screen w-full" : "bg-[url(/assets/home/background-home-desktop.jpg)] h-screen w-full"}`}>
       <header>
       <NavBar menuData={menuData} handleClickMenu={handleClickMenu} />
       </header>
